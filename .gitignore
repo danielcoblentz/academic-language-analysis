@@ -1,0 +1,89 @@
+# Ignore environment and secret files
+.env
+.env.*
+.env.local
+.env.backup
+# Keep example files tracked if present
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== Virtual Environments =====
+venv/
+.venv/
+ENV/
+env/
+.conda/
+
+# ===== IDEs & Editors =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ===== Jupyter Notebooks =====
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Data & Output (large/generated files) =====
+data/pdfs/
+data/raw/
+output/
+results/
+*.pdf
+*.csv
+!dictionaries/*.csv
+
+# ===== Logs & Temp =====
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# ===== Testing & Coverage =====
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ===== MongoDB local data =====
+mongodb_data/
+
+# ===== Misc =====
+*.bak
+*.orig
