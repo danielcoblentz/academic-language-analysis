@@ -70,11 +70,11 @@ def show_status(db):
     no_pdf = coll.count_documents({"processing_status": "no_pdf_available"})
     
     print(f"\nDownload status:")
-    print(f"  Total papers: {total}")
-    print(f"  Pending: {pending}")
-    print(f"  Downloaded: {downloaded}")
-    print(f"  Failed: {failed}")
-    print(f"  No PDF available: {no_pdf}")
+    print(f"Total papers: {total}")
+    print(f"Pending: {pending}")
+    print(f"Downloaded: {downloaded}")
+    print(f"Failed: {failed}")
+    print(f"No PDF available: {no_pdf}")
 
 
 def main():

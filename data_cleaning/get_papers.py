@@ -118,17 +118,17 @@ def print_summary(papers, inserted, updated):
     print(f"\n{'='*50}")
     print(f"Stage 1 complete")
     print(f"{'='*50}")
-    print(f"  Total processed: {len(papers)}")
-    print(f"  With abstracts: {with_abstract}")
-    print(f"  New in DB: {inserted}")
-    print(f"  Updated: {updated}")
+    print(f"Total processed: {len(papers)}")
+    print(f"With abstracts: {with_abstract}")
+    print(f"New in DB: {inserted}")
+    print(f"Updated: {updated}")
 
     print(f"\nSample papers:")
     for paper in papers[:3]:
         print(f"\n  [{paper['impact']['classification']}] {paper['title'][:60]}...")
         abstract = paper['content']['abstract'] or "NO ABSTRACT"
-        print(f"  Abstract: {abstract[:100]}...")
-        print(f"  Citations: {paper['impact']['citation_count']}")
+        print(f"Abstract: {abstract[:100]}...")
+        print(f"Citations: {paper['impact']['citation_count']}")
 
 
 def main():

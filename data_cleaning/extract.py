@@ -156,16 +156,16 @@ def generate_visualization(input_file, output_dir=None):
 
 
 def show_db_status(db):
-    """Print database status."""
+    """Print database status"""
     papers_count = db['papers'].count_documents({})
     with_abstract = db['papers'].count_documents({"content.abstract": {"$ne": "", "$ne": None}})
     extracted = db['extracted_features'].count_documents({})
     
     print(f"\nDatabase status:")
-    print(f"  Total papers: {papers_count}")
-    print(f"  With abstracts: {with_abstract}")
-    print(f"  Already extracted: {extracted}")
-    print(f"  Remaining: {with_abstract - extracted}")
+    print(f"Total papers: {papers_count}")
+    print(f"With abstracts: {with_abstract}")
+    print(f"Already extracted: {extracted}")
+    print(f"Remaining: {with_abstract - extracted}")
     
     return papers_count, with_abstract, extracted
 
